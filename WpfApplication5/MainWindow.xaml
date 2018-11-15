@@ -1,0 +1,39 @@
+﻿<Window x:Class="WpfApplication5.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApplication5"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="524.882" Width="750.084" Background="#FFFDCBCB">
+    <Grid Background="#FFAADA8E">
+        <Grid HorizontalAlignment="Left" Height="349" Margin="0,103,0,0" VerticalAlignment="Top" Width="578" Background="#FFF9FFBE">
+            <Label x:Name="label1" Content="First name" HorizontalAlignment="Left" Margin="33,33,0,0" VerticalAlignment="Top" Width="75"/>
+            <Label x:Name="label1_Copy" Content="Address" HorizontalAlignment="Left" Margin="33,169,0,0" VerticalAlignment="Top" Width="75"/>
+            <Label x:Name="label1_Copy1" Content="Last Name" HorizontalAlignment="Left" Margin="33,80,0,0" VerticalAlignment="Top" Width="75"/>
+            <Label x:Name="label1_Copy2" Content="Phone" HorizontalAlignment="Left" Margin="33,123,0,0" VerticalAlignment="Top" Width="75"/>
+            <TextBox x:Name="fNameTXT" HorizontalAlignment="Left" Height="23" Margin="154,36,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+            <TextBox x:Name="lNameTXT" HorizontalAlignment="Left" Height="23" Margin="154,80,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+            <TextBox x:Name="phoneTXT" HorizontalAlignment="Left" Height="23" Margin="154,126,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+            <TextBox x:Name="adddressTXT" HorizontalAlignment="Left" Height="84" Margin="154,172,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+            <Button x:Name="submitBtn" Content="Submit" HorizontalAlignment="Left" Margin="46,277,0,0" VerticalAlignment="Top" Width="123" Height="52" Click="submitBtn_Click"/>
+            <Button x:Name="resetBtn" Content="Reset" HorizontalAlignment="Left" Margin="242,277,0,0" VerticalAlignment="Top" Width="146" Height="52" Click="resetBtn_Click"/>
+            <Label x:Name="label2" Content="Gender" HorizontalAlignment="Left" Margin="361,33,0,0" VerticalAlignment="Top" Width="64"/>
+            <RadioButton x:Name="maleBtn" Content="Male" HorizontalAlignment="Left" Margin="430,39,0,0" VerticalAlignment="Top" Height="20" Width="99"/>
+            <RadioButton x:Name="femaleBtn" Content="Female" HorizontalAlignment="Left" Margin="489,39,0,0" VerticalAlignment="Top"/>
+            <Button x:Name="exitBtn" Content="Exit" HorizontalAlignment="Left" Margin="445,277,0,0" VerticalAlignment="Top" Width="101" Height="52" Click="exitBtn_Click"/>
+        </Grid>
+        <Label x:Name="label" Content="triOS College " HorizontalAlignment="Left" Margin="182,0,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="72" FontFamily="Vivaldi"/>
+        <Image x:Name="image" HorizontalAlignment="Left" Height="107" Margin="10,-1,0,0" VerticalAlignment="Top" Width="155" Source="https://media.glassdoor.com/sqll/342762/trios-college-squarelogo.png" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleY="-0.036" AngleX="0.143"/>
+                    <RotateTransform/>
+                    <TranslateTransform Y="0.588" X="-0.076"/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+
+    </Grid>
+</Window>
