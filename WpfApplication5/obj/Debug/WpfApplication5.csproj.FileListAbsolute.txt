@@ -12,3 +12,5 @@ c:\users\parthsharma\documents\visual studio 2015\Projects\WpfApplication5\WpfAp
 c:\users\parthsharma\documents\visual studio 2015\Projects\WpfApplication5\WpfApplication5\obj\Debug\WpfApplication5.csproj.GenerateResource.Cache
 c:\users\parthsharma\documents\visual studio 2015\Projects\WpfApplication5\WpfApplication5\obj\Debug\WpfApplication5.exe
 c:\users\parthsharma\documents\visual studio 2015\Projects\WpfApplication5\WpfApplication5\obj\Debug\WpfApplication5.pdb
+C:\Users\ParthSharma\Documents\Visual Studio 2015\Projects\WpfApplication5\WpfApplication5\bin\Debug\MySql.Data.dll
+C:\Users\ParthSharma\Documents\Visual Studio 2015\Projects\WpfApplication5\WpfApplication5\bin\Debug\MySql.Data.xml

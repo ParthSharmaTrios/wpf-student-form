@@ -22,6 +22,11 @@
             <RadioButton x:Name="maleBtn" Content="Male" HorizontalAlignment="Left" Margin="430,39,0,0" VerticalAlignment="Top" Height="20" Width="99"/>
             <RadioButton x:Name="femaleBtn" Content="Female" HorizontalAlignment="Left" Margin="489,39,0,0" VerticalAlignment="Top"/>
             <Button x:Name="exitBtn" Content="Exit" HorizontalAlignment="Left" Margin="445,277,0,0" VerticalAlignment="Top" Width="101" Height="52" Click="exitBtn_Click"/>
+            <GroupBox x:Name="groupBox" Header="Select your preference" HorizontalAlignment="Left" Height="65" Margin="361,84,0,0" VerticalAlignment="Top" Width="207" BorderThickness="1">
+                <RadioButton x:Name="ptBtn" Content="PT" HorizontalAlignment="Left" Margin="93,10,0,0" VerticalAlignment="Top"/>
+            </GroupBox>
+            <GroupBox x:Name="groupBox1" Header="GroupBox" HorizontalAlignment="Left" Height="49" Margin="425,10,0,0" VerticalAlignment="Top" Width="143"/>
+            <RadioButton x:Name="radioButton" Content="RadioButton" HorizontalAlignment="Left" Margin="354,182,0,0" VerticalAlignment="Top"/>
         </Grid>
         <Label x:Name="label" Content="triOS College " HorizontalAlignment="Left" Margin="182,0,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="72" FontFamily="Vivaldi"/>
         <Image x:Name="image" HorizontalAlignment="Left" Height="107" Margin="10,-1,0,0" VerticalAlignment="Top" Width="155" Source="https://media.glassdoor.com/sqll/342762/trios-college-squarelogo.png" RenderTransformOrigin="0.5,0.5">
@@ -34,6 +39,7 @@
                 </TransformGroup>
             </Image.RenderTransform>
         </Image>
+        <RadioButton x:Name="ftBtn" Content="FT" HorizontalAlignment="Left" Margin="379,216,0,0" VerticalAlignment="Top"/>
 
     </Grid>
 </Window>

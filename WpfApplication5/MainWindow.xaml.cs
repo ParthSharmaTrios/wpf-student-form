@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using MySql.Data.MySqlClient;
 
 namespace WpfApplication5
 {
@@ -47,6 +48,17 @@ namespace WpfApplication5
             var address = adddressTXT.Text;
 
             var gender = "";
+            var preference = "";
+
+            if (ftBtn.IsChecked == true)
+            {
+                preference = "Full time";
+            }
+
+            if (ptBtn.IsChecked == true)
+            {
+                preference = "Part time";
+            }
 
             if (maleBtn.IsChecked == true) {
                 gender = "male";
@@ -61,6 +73,30 @@ namespace WpfApplication5
             else
                 MessageBox.Show("Thank you for submitting the data");
 
+
+            string connectionString = "datasource=127.0.0.1;port=3306;username=root;password=;database=studentform;";
+            string query = "INSERT INTO students(`id`, `firstName`, `lastName`,`gender`,`mode`, `address`,`phone`) VALUES (NULL, '" + firstName + "', '" + lastName + "', '" + gender + "', '" + preference + "', '" + address + "', '" + phone + "')";
+            // Which could be translated manually to :
+            // INSERT INTO user(`id`, `firstName`, `lastName`, `address`) VALUES (NULL, 'John', 'Doe', 'John Doe Villa')
+
+            MySqlConnection databaseConnection = new MySqlConnection(connectionString);
+            MySqlCommand commandDatabase = new MySqlCommand(query, databaseConnection);
+            commandDatabase.CommandTimeout = 60;
+
+            try
+            {
+                databaseConnection.Open();
+                MySqlDataReader myReader = commandDatabase.ExecuteReader();
+
+                MessageBox.Show("User succesfully registered");
+
+                databaseConnection.Close();
+            }
+            catch (Exception ex)
+            {
+                // Show any error message.
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void exitBtn_Click(object sender, RoutedEventArgs e)
