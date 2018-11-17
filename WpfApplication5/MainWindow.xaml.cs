@@ -24,6 +24,7 @@ namespace WpfApplication5
         public MainWindow()
         {
             InitializeComponent();
+
         }
 
         private void resetBtn_Click(object sender, RoutedEventArgs e)
@@ -70,9 +71,7 @@ namespace WpfApplication5
 
             if (firstName == "" || lastName == "" || phone == "" || address == "")
                 MessageBox.Show("Please enter all data " + gender);
-            else
-                MessageBox.Show("Thank you for submitting the data");
-
+           
 
             string connectionString = "datasource=127.0.0.1;port=3306;username=root;password=;database=studentform;";
             string query = "INSERT INTO students(`id`, `firstName`, `lastName`,`gender`,`mode`, `address`,`phone`) VALUES (NULL, '" + firstName + "', '" + lastName + "', '" + gender + "', '" + preference + "', '" + address + "', '" + phone + "')";
@@ -103,6 +102,15 @@ namespace WpfApplication5
         {
             Application.Current.MainWindow.Close();
   
+        }
+
+        private void showBtn_Click(object sender, RoutedEventArgs e)
+        {
+            Window2 win2 = new Window2();
+
+            win2.Show();
+
+            this.Hide();
         }
     }
 }
